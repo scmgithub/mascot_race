@@ -29,9 +29,9 @@ mascot3.trip = function() {
 var racedistance = 20;
 
 var race = function(race_distance, m1, m2, m3) {
-	d1 = race_distance;
-	d2 = race_distance;
-	d3 = race_distance;
+	var d1 = race_distance;
+	var d2 = race_distance;
+	var d3 = race_distance;
 
 	while (d1 > 0 && d2 > 0 && d3 > 0) {
 		d1 -= m1.run();
