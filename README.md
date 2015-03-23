@@ -4,7 +4,8 @@
 
 WDI - Lemon, 3/23/2015
 
-_Contributors_
+**Contributors**
+
 Qiao Lin
 Steve McIntosh
 Molly Setzer
@@ -16,7 +17,6 @@ Molly Setzer
 - var Smaller---> determines the two smallest values
 - var Smallest---> determines the smallest value
 - var raceDistance ---> the given variable length of the race (20 meters)
-- var race---->function that determines the current race distance
 - var lowest---->funtion that determines if there is a winner (or tie) by comparing var race=function()
 
 
