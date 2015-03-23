@@ -18,8 +18,13 @@ var smallest = function(x, y, z) {
 }
 
 var mascot1 = new Mascot("Pete", "Potato", 4);
-var mascot2 = new Mascot("Benny", "Blueberry", 4);
-var mascot3 = new Mascot("Harry", "Hamburger", 4);
+var mascot2 = new Mascot("Benny", "Blueberry", 3);
+var mascot3 = new Mascot("Harry", "Hamburger", 5);
+
+mascot3.trip = function() {
+	console.log("OH NO!  "+this.name+" tripped!");
+	return 0;
+}
 
 var racedistance = 20;
 
@@ -33,7 +38,12 @@ var race = function(race_distance, m1, m2, m3) {
 		console.log (m1.name + " has "+d1+" meters remaining.");
 		d2 -= m2.run();
 		console.log (m2.name + " has "+d2+" meters remaining.");
-		d3 -= m3.run();
+		// d3 may trip...
+		if (Math.random() <= 0.30) {
+			m3.trip();
+		} else {
+			d3 -= m3.run();
+		}
 		console.log (m3.name + " has "+d3+" meters remaining.");
 
 		console.log("==================");
